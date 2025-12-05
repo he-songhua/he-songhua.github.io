@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songhua He</title>
+    <meta name="description" content="Academic webpage of Songhua He, PhD Student in Computational Complexity at Rutgers University.">
+    <style>
+        /* SLEEK & MINIMALIST ACADEMIC THEME
+           Inspired by Hoeteck Wee and standard complexity theory pages.
+           Focus: High readability, zero clutter.
+        */
+
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #222222;
+            --link-color: #0044cc; /* Classic academic blue */
+            --link-hover: #0066ff;
+            --meta-color: #666666;
+            --spacing-unit: 1.5rem;
+            --container-width: 750px; /* Optimal reading width */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased; /* Crisp text on Mac */
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: var(--container-width);
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            color: #444;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Links */
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--link-hover);
+            border-bottom: 1px solid var(--link-hover);
+        }
+
+        /* Header Section */
+        header {
+            margin-bottom: 3rem;
+        }
+
+        .affiliation {
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        .contact-info {
+            margin-top: 0.5rem;
+            font-family: monospace; /* Monospace for email often helps readability/copying */
+            font-size: 0.95rem;
+            color: var(--meta-color);
+        }
+
+        /* Publication List Styling */
+        ul.paper-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.paper-list li {
+            margin-bottom: 1.5rem;
+        }
+
+        .paper-title {
+            font-weight: 600;
+            display: block; /* Title on its own line often looks cleaner */
+            margin-bottom: 0.2rem;
+        }
+
+        .paper-authors {
+            color: #333;
+        }
+
+        .paper-venue {
+            font-style: italic;
+            color: var(--meta-color);
+        }
+
+        .links {
+            font-size: 0.9rem;
+            margin-left: 0.3rem;
+        }
+
+        .links a {
+            margin-right: 0.5rem;
+            color: var(--link-color);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eaeaea;
+            font-size: 0.85rem;
+            color: #999;
+            text-align: center;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 2rem auto;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <h1>Songhua He</h1>
+        <div class="affiliation">
+            PhD Student in Computer Science<br>
+            Rutgers University
+        </div>
+        <div class="contact-info">
+            songhua.he [at] rutgers.edu
+        </div>
+        <p style="margin-top: 1.5rem; max-width: 600px;">
+            I am a PhD student at Rutgers University, advised by <a href="https://www.cs.rutgers.edu/~pp607/" target="_blank">Periklis A. Papakonstantinou</a>. 
+            My research focuses on <strong>computational complexity</strong>, specifically understanding the theoretical foundations of neural networks and complexity classes.
+        </p>
+    </header>
+
+    <!-- PUBLICATIONS SECTION -->
+    <section>
+        <h2>Publications</h2>
+        <ul class="paper-list">
+            
+            <!-- 2025 -->
+            <li>
+                <span class="paper-title">A note on a hierarchy theorem for promise-BPTIME</span>
+                <div class="paper-authors">
+                    Songhua He
+                </div>
+                <div class="paper-venue">
+                    Electronic Colloquium on Computational Complexity (ECCC), 2025
+                    <span class="links">
+                        [<a href="https://eccc.weizmann.ac.il/report/2025/025/" target="_blank">ECCC</a>]
+                    </span>
+                </div>
+            </li>
+
+            <!-- 2024 -->
+            <li>
+                <span class="paper-title">The Effect of Weight Precision on the Neuron Count in Deep ReLU Networks</span>
+                <div class="paper-authors">
+                    Songhua He, Periklis A. Papakonstantinou
+                </div>
+                <div class="paper-venue">
+                    International Conference on Machine Learning (ICML), 2024
+                    <span class="links">
+                        [<a href="https://proceedings.mlr.press/v235/he24b.html" target="_blank">PDF</a>]
+                    </span>
+                </div>
+            </li>
+
+            <li>
+                <span class="paper-title">Lower Bounds in the Query-with-Sketch Model and a Barrier in Derandomizing BPL</span>
+                <div class="paper-authors">
+                    Songhua He, Yuanzhi Li, Periklis A. Papakonstantinou, Xin Yang
+                </div>
+                <div class="paper-venue">
+                    Electronic Colloquium on Computational Complexity (ECCC), 2024
+                    <span class="links">
+                        [<a href="https://eccc.weizmann.ac.il/report/2024/024/" target="_blank">ECCC</a>]
+                    </span>
+                </div>
+            </li>
+
+            <!-- 2022 -->
+            <li>
+                <span class="paper-title">Deep Neural Networks: The Missing Complexity Parameter</span>
+                <div class="paper-authors">
+                    Songhua He, Periklis A. Papakonstantinou
+                </div>
+                <div class="paper-venue">
+                    Electronic Colloquium on Computational Complexity (ECCC), 2022
+                    <span class="links">
+                        [<a href="https://eccc.weizmann.ac.il/report/2022/022/" target="_blank">ECCC</a>]
+                    </span>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- LINKS / FOOTER -->
+    <footer>
+        <p>
+            <a href="https://dblp.org/pid/118/4654.html">DBLP</a> &nbsp;/&nbsp; 
+            <a href="https://scholar.google.com/">Google Scholar</a>
+        </p>
+        <p>&copy; 2025 Songhua He</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
